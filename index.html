@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marios Fokianos</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" type="image/png" href="ICON2.png" />
   </head>
   <body>
@@ -12,66 +13,75 @@
       <!-- <h1>Marios Fokianos</h1> -->
     </header>
 
-    <div class="main-name">
-      <h4 class="greeting">Hello There! I'm</h4>
-      <h2 class="name-greeting">Marios Fokianos</h2>
-      <h3> A Programmer</h3>
+    <section class="main-name">
+      <div class="profile-container">
+        <img src="programmer.jpg" alt="Profile Picture" class="profile-img" />
+        <div class="text-content">
+          <h4 class="greeting">Hello There! I'm</h4>
+          <h2 class="name-greeting">Marios Fokianos</h2>
+          <h3>A Programmer</h3>
 
-      <div class="buttons">
-        <button class="cv">Download CV</button>
-        <button class="Contact">Contact Me</button>
+          <div class="buttons">
+            <button class="cv">Download CV</button>
+            <button class="Contact" onclick="location.href='#about'">
+              Contact Me
+            </button>
+          </div>
+          <div class="links">
+            <nav class="icons-links">
+              <li>
+                <a href="https://github.com/mariosfok" target="_blank">
+                  <img src="github-color.svg" alt="GitHub" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marios-fokianos-41ab62334/"
+                  target="_blank"
+                >
+                  <img src="linkedin.svg" alt="LinkedIn" />
+                </a>
+              </li>
+            </nav>
+          </div>
+        </div>
       </div>
-      <div class="links">
-        <nav class="icons-links">
-          </li>
-          <li>
-            <a href="https://github.com/mariosfok" target="_blank">
-              <img src="github-color.svg" alt="GitHub" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/marios-fokianos-41ab62334/" target="_blank">
-              <img src="linkedin.svg" alt="LinkedIn" />
-            </a>
-          </li>
-        </nav>
-      </div>
-    </div>
+    </section>
 
-    <div class="about">
+    <section class="about" id="about">
       <h2>About Me</h2>
-      <p class="about-info">
+      <p class="contact-box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab
         similique quisquam eius, nobis excepturi nisi. Voluptas, provident
         facilis dolores architecto velit tempora minima soluta ipsa repellat
         rerum autem dicta?
       </p>
-      <p class="about-info">
+      <p class="contact-box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab
         similique quisquam eius, nobis excepturi nisi. Voluptas, provident
         facilis dolores architecto velit tempora minima soluta ipsa repellat
         rerum autem dicta?
       </p>
-      <p class="about-info">
+      <p class="contact-box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab
         similique quisquam eius, nobis excepturi nisi. Voluptas, provident
         facilis dolores architecto velit tempora minima soluta ipsa repellat
         rerum autem dicta?
       </p>
-      <p class="about-info">
+      <p class="contact-box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab
         similique quisquam eius, nobis excepturi nisi. Voluptas, provident
         facilis dolores architecto velit tempora minima soluta ipsa repellat
         rerum autem dicta?
       </p>
-
-      <h2>Skills</h2>
-
+    </section>
+    <h2>Skills</h2>
+    <section class="skills" id="skills">
       <div class="box">
-        
         <div class="item">
           <img src="tick.png" alt="Tick Icon" class="icon" />
           <h3>JAVA SCRIPT</h3>
+          <h4>Begginer Level</h4>
         </div>
         <div class="item">
           <img src="tick.png" alt="Tick Icon" class="icon" />
@@ -81,17 +91,16 @@
           <img src="tick.png" alt="Tick Icon" class="icon" />
           <h3>HTML</h3>
         </div>
-        </div>
-        <div class="box"><div class="item">
+      </div>
+      <div class="box">
+        <div class="item">
           <img src="tick.png" alt="Tick Icon" class="icon" />
           <h3>CSS</h3>
-        </div></div>
-        
-      
+        </div>
       </div>
-      
+    </section>
 
-    <div class="contact-box">
+    <section class="contact-box">
       <a href="mailto:mariosfokianos1@gmail.com" class="contact-item">
         <img src="gmail.png" alt="Email" />
         mariosfokianos1@gmail.com
@@ -104,11 +113,11 @@
         <img src="linkedin.svg" alt="LinkedIn" />
         LinkedIn
       </a>
-    </div>
+    </section>
 
     <footer>
       <p class="copyright">
-        Copyright © 2024 Marios Fokianos. All rights reserved.
+        Copyright © 2025 Marios Fokianos. All rights reserved.
       </p>
     </footer>
   </body>

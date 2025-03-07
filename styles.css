@@ -1,7 +1,11 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* General Styles */
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
@@ -13,7 +17,7 @@ body {
   align-items: center;
 }
 
-/* Header */
+/* Header Styles */
 header {
   text-align: center;
   margin-top: 40px;
@@ -26,15 +30,46 @@ h1 {
 
 h2 {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
-/* Main Content */
+h4 {
+  font-weight: lighter;
+  color: #888;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+/* Main Section Styles */
 .main-name {
   text-align: center;
   margin: 40px 0;
 }
+.profile-container {
+  display: flex;
+  align-items: center;
+}
 
+.profile-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-links {
+  display: flex;
+}
+.icons-links li {
+  margin-right: 10px;
+}
+.icons-links li:last-child {
+  margin-right: 0;
+}
 .greeting {
   font-size: 1.2rem;
   font-weight: 300;
@@ -45,6 +80,7 @@ h2 {
   font-weight: 600;
 }
 
+/* Buttons */
 .buttons button {
   border: none;
   background-color: black;
@@ -58,7 +94,7 @@ h2 {
 }
 
 .buttons button:hover {
-  background-color: #444444;
+  background-color: #7c7c7c;
 }
 
 /* Links Section */
@@ -67,6 +103,11 @@ h2 {
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
+}
+
+.icons-links {
+  display: flex;
+  gap: 10px;
 }
 
 .icons-links li {
@@ -81,19 +122,27 @@ h2 {
 }
 
 .icons-links a:hover img {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
+/* About Section */
+
 .about {
-  margin-top: 100%;
+  margin-top: 50%;
 }
+
 .about-info {
   text-align: center;
   margin: 40px 0;
 }
 
+/* Skills Section */
 .skills {
-  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 /* Contact Box */
@@ -106,26 +155,33 @@ h2 {
   padding: 15px 30px;
   margin-top: 40px;
 }
+
 .box {
-  background-color: #f9f9f9; /* Απαλό γκρι */
+  background-color: #f9f9f9; /* Soft grey */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Ρύθμιση πλάτους */
+  width: 400px; /* Σταθερό πλάτος */
+  height: 300px; /* Σταθερό ύψος */
   margin: 20px auto; /* Κεντράρισμα */
-}
-.item {
-  display: flex;
-  align-items: center; /* Στοίχιση στο κέντρο */
-  margin-bottom: 15px; /* Απόσταση μεταξύ των στοιχείων */
-}
-.icon {
-  width: 20px; /* Μικρό μέγεθος */
-  height: auto;
-  margin-right: 10px; /* Απόσταση από το κείμενο */
+  overflow: hidden; /* Κρύβει το περιεχόμενο που ξεφεύγει */
 }
 
-/* skills */
+/* Contact Item */
+.item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px; /* Space between items */
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px; /* Space from text */
+}
+
+/* Contact Links */
 .contact-item {
   display: flex;
   align-items: center;
@@ -141,7 +197,7 @@ h2 {
   margin-right: 10px;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0;
